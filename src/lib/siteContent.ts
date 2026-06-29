@@ -1,4 +1,4 @@
-// Site content and data for Wanderwise Travel Agency
+// Site content and data for Traveller Travel Agency
 
 export interface Package {
   id: string;
@@ -31,7 +31,7 @@ export interface Destination {
 
 export const siteContent = {
   // Brand
-  brandName: "Wanderwise",
+  brandName: "Traveller",
   tagline: "Book your perfect trip in minutes, not hours",
   
   // Hero Section
@@ -57,7 +57,7 @@ export const siteContent = {
 
   // About Section
   about: {
-    overline: "About Wanderwise",
+    overline: "About Traveller",
     heading: "Travel planning shouldn't feel like work",
     subtext: "We're a team of passionate travelers who've spent years exploring the world. From navigating chaotic markets to finding the perfect sunset spot, we've learned what makes a trip truly unforgettable. Now we use that knowledge to plan yours.",
     stats: [
@@ -228,25 +228,25 @@ export const siteContent = {
       {
         id: "1",
         name: "Sarah Mitchell",
-        role: "Software Engineer",
-        content: "Wanderwise turned my vague 'I want to see Japan' into the trip of a lifetime. Every temple, every meal, every moment was perfectly curated. I felt like a local, not a tourist.",
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
+        role: "Adventure Enthusiast",
+        content: "The team planned our entire two-week Japan trip, from hidden temples to local food tours. Every detail was perfect, and we discovered places we would have never found on our own.",
+        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
         rating: 5
       },
       {
         id: "2",
-        name: "Michael Chen",
-        role: "Entrepreneur",
-        content: "As someone who travels constantly for work, I thought I knew how to plan trips. I was wrong. The attention to detail and insider knowledge was unmatched.",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+        name: "Marcus Chen",
+        role: "Family Traveler",
+        content: "Booking through them saved us hours of research. They understood our budget and travel style perfectly, creating an itinerary that kept our kids engaged while giving us time to relax.",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
         rating: 5
       },
       {
         id: "3",
         name: "Emma Rodriguez",
-        role: "Teacher",
-        content: "I had one week and a modest budget. They made it work beautifully. Greece was everything I hoped for and more — without breaking the bank.",
-        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
+        role: "Solo Traveler",
+        content: "As a solo female traveler, I appreciated their safety-first approach and local connections. They connected me with trusted guides and accommodations that made me feel secure throughout my journey.",
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80",
         rating: 5
       }
     ] as Testimonial[]
@@ -254,62 +254,73 @@ export const siteContent = {
 
   // Contact Section
   contact: {
-    overline: "Get in Touch",
-    heading: "Ready to start your adventure?",
-    subtext: "Share your travel dreams with us and we'll craft a personalized itinerary just for you. Whether it's a quick question or a detailed trip plan, we're here to help.",
-    email: "travelind@gmail.com",
-    phone: "7550291783",
-    whatsapp: {
-      number: "+1234567890",
-      text: "Prefer to chat? Message us on WhatsApp",
-      link: "Chat on WhatsApp"
-    },
+    overline: "Get Started",
+    heading: "Ready to plan your adventure?",
+    subtext: "Tell us about your dream trip, and we'll respond within 24 hours with personalized recommendations.",
+    email: "hello@travellerguide.com",
+    phone: "+1 (555) 123-4567",
+    whatsapp: "+1 (555) 123-4567",
+    address: "123 Explorer Street, Adventure City, AC 12345",
     form: {
       namePlaceholder: "Your name",
-      emailPlaceholder: "your.email@example.com",
-      phonePlaceholder: "(Optional) Your phone number",
+      emailPlaceholder: "Your email",
+      destinationPlaceholder: "Where do you want to go?",
+      datePlaceholder: "When are you planning to travel?",
+      budgetPlaceholder: "Budget range (optional)",
       messagePlaceholder: "Tell us about your dream trip...",
-      submitButton: "Send Message"
+      submitText: "Send Inquiry"
     }
   },
 
   // Footer
   footer: {
-    tagline: "Expert travel planning for the curious wanderer. Let us handle the details while you dream of your next adventure.",
+    tagline: "Your journey begins with a single message. Let's make it unforgettable.",
+    copyright: "© 2024 Traveller. All rights reserved.",
+    social: [
+      {
+        platform: "Instagram",
+        url: "https://instagram.com",
+        icon: "Instagram"
+      },
+      {
+        platform: "Facebook",
+        url: "https://facebook.com",
+        icon: "Facebook"
+      },
+      {
+        platform: "Twitter",
+        url: "https://twitter.com",
+        icon: "Twitter"
+      }
+    ],
     sections: [
+      {
+        title: "Destinations",
+        links: [
+          { label: "Asia", href: "#packages" },
+          { label: "Europe", href: "#packages" },
+          { label: "Americas", href: "#packages" },
+          { label: "Africa", href: "#packages" }
+        ]
+      },
       {
         title: "Company",
         links: [
           { label: "About Us", href: "#about" },
           { label: "How It Works", href: "#how-it-works" },
-          { label: "Destinations", href: "#packages" },
-          { label: "Blog", href: "#" }
+          { label: "Testimonials", href: "#testimonials" },
+          { label: "Contact", href: "#contact" }
         ]
       },
       {
         title: "Support",
         links: [
-          { label: "Help Center", href: "#" },
-          { label: "Contact Us", href: "#contact" },
-          { label: "FAQs", href: "#" },
-          { label: "Travel Insurance", href: "#" }
-        ]
-      },
-      {
-        title: "Legal",
-        links: [
-          { label: "Privacy Policy", href: "#" },
-          { label: "Terms of Service", href: "#" },
-          { label: "Cookie Policy", href: "#" },
-          { label: "Refund Policy", href: "#" }
+          { label: "FAQ", href: "#" },
+          { label: "Travel Insurance", href: "#" },
+          { label: "Payment Options", href: "#" },
+          { label: "Cancellation Policy", href: "#" }
         ]
       }
-    ],
-    social: [
-      { platform: "Instagram", icon: "Instagram", url: "https://instagram.com" },
-      { platform: "Facebook", icon: "Facebook", url: "https://facebook.com" },
-      { platform: "Twitter", icon: "Twitter", url: "https://twitter.com" }
-    ],
-    copyright: "© 2024 Wanderwise Travel Agency. All rights reserved."
+    ]
   }
 };
