@@ -55,6 +55,32 @@ export const siteContent = {
     ]
   },
 
+  // About Section
+  about: {
+    overline: "About Wanderwise",
+    heading: "Travel planning shouldn't feel like work",
+    subtext: "We're a team of passionate travelers who've spent years exploring the world. From navigating chaotic markets to finding the perfect sunset spot, we've learned what makes a trip truly unforgettable. Now we use that knowledge to plan yours.",
+    stats: [
+      {
+        number: "500+",
+        label: "Trips Planned"
+      },
+      {
+        number: "42",
+        label: "Countries Covered"
+      },
+      {
+        number: "98%",
+        label: "Satisfaction Rate"
+      },
+      {
+        number: "24hr",
+        label: "Response Time"
+      }
+    ],
+    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80"
+  },
+
   // Featured Packages Section
   packages: {
     overline: "Curated Journeys",
@@ -212,14 +238,14 @@ export const siteContent = {
         name: "James Chen",
         role: "Tech Entrepreneur",
         content: "As someone who barely has time to plan lunch, Wanderwise was a revelation. I told them I wanted adventure without roughing it, and they delivered an epic Patagonian trek with boutique lodges. Worth every penny.",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
         rating: 5
       },
       {
         id: "3",
-        name: "Emma Rodriguez",
-        role: "Architect",
-        content: "The attention to detail was incredible. They knew I was interested in design and wove architectural tours into my Morocco itinerary that I never would have found myself. This is travel planning elevated to an art form.",
+        name: "Elena Rodriguez",
+        role: "Interior Designer",
+        content: "I was nervous about traveling solo to Morocco, but Wanderwise matched me with an incredible local guide who became a friend. The entire trip felt safe, authentic, and magical. I'm already planning my next adventure with them.",
         image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
         rating: 5
       }
@@ -228,60 +254,72 @@ export const siteContent = {
 
   // Contact Section
   contact: {
-    overline: "Ready to Explore?",
+    overline: "Get In Touch",
     heading: "Let's plan your next adventure",
-    subtext: "Whether you have a clear vision or just a vague wanderlust, we're here to help. Send us a message and we'll get back to you within 24 hours.",
+    subtext: "Tell us where you want to go, and we'll handle the rest. Whether you have a detailed vision or just a spark of inspiration, we're here to bring your travel dreams to life.",
+    whatsapp: {
+      text: "Prefer to chat instantly?",
+      number: "+1 (555) 123-4567",
+      link: "Message us on WhatsApp"
+    },
     form: {
       namePlaceholder: "Your name",
-      emailPlaceholder: "Your email",
-      phonePlaceholder: "Phone number (optional)",
-      messagePlaceholder: "Tell us about your dream trip...",
+      emailPlaceholder: "your.email@example.com",
+      phonePlaceholder: "+1 (555) 000-0000",
+      messagePlaceholder: "Tell us about your dream trip — destinations, dates, budget, activities you love...",
       submitButton: "Send Message"
-    },
-    whatsapp: {
-      text: "Prefer to chat?",
-      link: "Message us on WhatsApp",
-      number: "+1234567890"
     }
   },
 
   // Footer
   footer: {
-    tagline: "Crafting unforgettable journeys, one traveler at a time.",
+    tagline: "Expert travel planning made simple. Let us craft your perfect adventure from start to finish.",
+    social: [
+      {
+        platform: "Instagram",
+        url: "https://instagram.com",
+        icon: "Instagram"
+      },
+      {
+        platform: "Facebook",
+        url: "https://facebook.com",
+        icon: "Facebook"
+      },
+      {
+        platform: "Twitter",
+        url: "https://twitter.com",
+        icon: "Twitter"
+      }
+    ],
     sections: [
       {
         title: "Company",
         links: [
           { label: "About Us", href: "#about" },
-          { label: "Our Team", href: "#" },
-          { label: "Careers", href: "#" },
-          { label: "Press", href: "#" }
+          { label: "Our Team", href: "#team" },
+          { label: "Careers", href: "#careers" },
+          { label: "Press", href: "#press" }
         ]
       },
       {
         title: "Destinations",
         links: [
-          { label: "Asia", href: "#packages" },
-          { label: "Europe", href: "#packages" },
-          { label: "Americas", href: "#packages" },
-          { label: "Africa", href: "#packages" }
+          { label: "Asia", href: "#asia" },
+          { label: "Europe", href: "#europe" },
+          { label: "Americas", href: "#americas" },
+          { label: "Africa", href: "#africa" }
         ]
       },
       {
-        title: "Support",
+        title: "Contact",
         links: [
-          { label: "Help Center", href: "#" },
-          { label: "Travel Insurance", href: "#" },
-          { label: "Terms & Conditions", href: "#" },
-          { label: "Privacy Policy", href: "#" }
+          { label: "travelind@gmail.com", href: "mailto:travelind@gmail.com" },
+          { label: "+1 (555) 123-4567", href: "tel:+15551234567" },
+          { label: "WhatsApp", href: "https://wa.me/15551234567" },
+          { label: "Help Center", href: "#help" }
         ]
       }
     ],
-    social: [
-      { platform: "Instagram", url: "https://instagram.com", icon: "Instagram" },
-      { platform: "Facebook", url: "https://facebook.com", icon: "Facebook" },
-      { platform: "Twitter", url: "https://twitter.com", icon: "Twitter" }
-    ],
-    copyright: "© 2024 Wanderwise. All rights reserved."
+    copyright: `© ${new Date().getFullYear()} Wanderwise Travel Agency. All rights reserved.`
   }
 };
