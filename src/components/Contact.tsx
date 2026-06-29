@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Send, MessageCircle } from 'lucide-react';
+import { Send, MessageCircle, Mail, Phone } from 'lucide-react';
 import { siteContent } from '../lib/siteContent';
 
 export const Contact: React.FC = () => {
@@ -44,6 +44,38 @@ export const Contact: React.FC = () => {
             <p className="text-lg text-text-muted leading-relaxed mb-8 max-w-xl">
               {siteContent.contact.subtext}
             </p>
+
+            {/* Contact Details */}
+            <div className="space-y-4 mb-8">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Mail className="text-primary" size={20} />
+                </div>
+                <div>
+                  <p className="text-sm text-text-muted mb-1">Email us</p>
+                  <a
+                    href={`mailto:${siteContent.contact.email}`}
+                    className="text-primary font-medium hover:text-secondary transition-colors"
+                  >
+                    {siteContent.contact.email}
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Phone className="text-primary" size={20} />
+                </div>
+                <div>
+                  <p className="text-sm text-text-muted mb-1">Call us</p>
+                  <a
+                    href={`tel:${siteContent.contact.phone}`}
+                    className="text-primary font-medium hover:text-secondary transition-colors"
+                  >
+                    {siteContent.contact.phone}
+                  </a>
+                </div>
+              </div>
+            </div>
 
             {/* WhatsApp CTA */}
             <div className="bg-surface rounded-2xl p-6 mb-8">

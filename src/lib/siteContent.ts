@@ -228,24 +228,24 @@ export const siteContent = {
       {
         id: "1",
         name: "Sarah Mitchell",
-        role: "Adventure Photographer",
-        content: "Wanderwise turned my vague idea of 'somewhere in Southeast Asia' into a perfectly curated two-week journey. Every hotel, every guide, every meal was thoughtfully chosen. I felt like a local, not a tourist.",
+        role: "Software Engineer",
+        content: "Wanderwise turned my vague 'I want to see Japan' into the trip of a lifetime. Every temple, every meal, every moment was perfectly curated. I felt like a local, not a tourist.",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
         rating: 5
       },
       {
         id: "2",
-        name: "James Chen",
-        role: "Tech Entrepreneur",
-        content: "As someone who barely has time to plan lunch, Wanderwise was a revelation. I told them I wanted adventure without roughing it, and they delivered an epic Patagonian trek with boutique lodges. Worth every penny.",
+        name: "Michael Chen",
+        role: "Entrepreneur",
+        content: "As someone who travels constantly for work, I thought I knew how to plan trips. I was wrong. The attention to detail and insider knowledge was unmatched.",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
         rating: 5
       },
       {
         id: "3",
-        name: "Elena Rodriguez",
-        role: "Interior Designer",
-        content: "I was nervous about traveling solo to Morocco, but Wanderwise matched me with an incredible local guide who became a friend. The entire trip felt safe, authentic, and magical. I'm already planning my next adventure with them.",
+        name: "Emma Rodriguez",
+        role: "Teacher",
+        content: "I had one week and a modest budget. They made it work beautifully. Greece was everything I hoped for and more — without breaking the bank.",
         image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
         rating: 5
       }
@@ -254,72 +254,62 @@ export const siteContent = {
 
   // Contact Section
   contact: {
-    overline: "Get In Touch",
-    heading: "Let's plan your next adventure",
-    subtext: "Tell us where you want to go, and we'll handle the rest. Whether you have a detailed vision or just a spark of inspiration, we're here to bring your travel dreams to life.",
+    overline: "Get in Touch",
+    heading: "Ready to start your adventure?",
+    subtext: "Share your travel dreams with us and we'll craft a personalized itinerary just for you. Whether it's a quick question or a detailed trip plan, we're here to help.",
+    email: "travelind@gmail.com",
+    phone: "7550291783",
     whatsapp: {
-      text: "Prefer to chat instantly?",
-      number: "+1 (555) 123-4567",
-      link: "Message us on WhatsApp"
+      number: "+1234567890",
+      text: "Prefer to chat? Message us on WhatsApp",
+      link: "Chat on WhatsApp"
     },
     form: {
       namePlaceholder: "Your name",
       emailPlaceholder: "your.email@example.com",
-      phonePlaceholder: "+1 (555) 000-0000",
-      messagePlaceholder: "Tell us about your dream trip — destinations, dates, budget, activities you love...",
+      phonePlaceholder: "(Optional) Your phone number",
+      messagePlaceholder: "Tell us about your dream trip...",
       submitButton: "Send Message"
     }
   },
 
   // Footer
   footer: {
-    tagline: "Expert travel planning made simple. Let us craft your perfect adventure from start to finish.",
-    social: [
-      {
-        platform: "Instagram",
-        url: "https://instagram.com",
-        icon: "Instagram"
-      },
-      {
-        platform: "Facebook",
-        url: "https://facebook.com",
-        icon: "Facebook"
-      },
-      {
-        platform: "Twitter",
-        url: "https://twitter.com",
-        icon: "Twitter"
-      }
-    ],
+    tagline: "Expert travel planning for the curious wanderer. Let us handle the details while you dream of your next adventure.",
     sections: [
       {
         title: "Company",
         links: [
           { label: "About Us", href: "#about" },
-          { label: "Our Team", href: "#team" },
-          { label: "Careers", href: "#careers" },
-          { label: "Press", href: "#press" }
+          { label: "How It Works", href: "#how-it-works" },
+          { label: "Destinations", href: "#packages" },
+          { label: "Blog", href: "#" }
         ]
       },
       {
-        title: "Destinations",
+        title: "Support",
         links: [
-          { label: "Asia", href: "#asia" },
-          { label: "Europe", href: "#europe" },
-          { label: "Americas", href: "#americas" },
-          { label: "Africa", href: "#africa" }
+          { label: "Help Center", href: "#" },
+          { label: "Contact Us", href: "#contact" },
+          { label: "FAQs", href: "#" },
+          { label: "Travel Insurance", href: "#" }
         ]
       },
       {
-        title: "Contact",
+        title: "Legal",
         links: [
-          { label: "travelind@gmail.com", href: "mailto:travelind@gmail.com" },
-          { label: "+1 (555) 123-4567", href: "tel:+15551234567" },
-          { label: "WhatsApp", href: "https://wa.me/15551234567" },
-          { label: "Help Center", href: "#help" }
+          { label: "Privacy Policy", href: "#" },
+          { label: "Terms of Service", href: "#" },
+          { label: "Cookie Policy", href: "#" },
+          { label: "Refund Policy", href: "#" }
         ]
       }
     ],
-    copyright: `© ${new Date().getFullYear()} Wanderwise Travel Agency. All rights reserved.`
+    social: [
+      { platform: "Instagram", icon: "Instagram", url: "https://instagram.com" },
+      { platform: "Facebook", icon: "Facebook", url: "https://facebook.com" },
+      { platform: "Twitter", icon: "Twitter", url: "https://twitter.com" }
+    ],
+    copyright: "© 2024 Wanderwise Travel Agency. All rights reserved."
   }
 };

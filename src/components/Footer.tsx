@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Facebook, Twitter } from 'lucide-react';
+import { Instagram, Facebook, Twitter, Mail, Phone } from 'lucide-react';
 import { siteContent } from '../lib/siteContent';
 
 const iconMap = {
@@ -21,6 +21,24 @@ export const Footer: React.FC = () => {
             <p className="text-white/80 leading-relaxed mb-6 max-w-md">
               {siteContent.footer.tagline}
             </p>
+            
+            {/* Contact Info */}
+            <div className="space-y-3 mb-6">
+              <a 
+                href={`mailto:${siteContent.contact.email}`}
+                className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
+              >
+                <Mail size={18} className="flex-shrink-0" />
+                <span className="text-sm">{siteContent.contact.email}</span>
+              </a>
+              <a 
+                href={`tel:${siteContent.contact.phone}`}
+                className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
+              >
+                <Phone size={18} className="flex-shrink-0" />
+                <span className="text-sm">{siteContent.contact.phone}</span>
+              </a>
+            </div>
             
             {/* Social Links */}
             <div className="flex gap-4">
