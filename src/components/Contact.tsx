@@ -88,7 +88,7 @@ export const Contact: React.FC = () => {
                     {siteContent.contact.whatsapp.text}
                   </h3>
                   <a
-                    href={`https://wa.me/${siteContent.contact.whatsapp.number.replace(/\D/g, '')}`}
+                    href={`https://wa.me/${(siteContent.contact.whatsapp.number || '').replace(/\D/g, '')}`}
                     className="text-primary font-medium hover:text-secondary transition-colors inline-flex items-center gap-2"
                   >
                     {siteContent.contact.whatsapp.link}
@@ -182,7 +182,7 @@ export const Contact: React.FC = () => {
                   type="submit"
                   className="w-full bg-accent text-white py-4 rounded-full font-semibold hover:bg-secondary hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                 >
-                  {siteContent.contact.form.submitButton}
+                  {siteContent.contact.form.buttonText}
                   <Send size={20} />
                 </button>
               </div>
